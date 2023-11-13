@@ -5,9 +5,9 @@ from Infogroup 2022 data to the FSIS dataset, based on address and location.
 import pandas as pd
 import numpy as np
 from fuzzywuzzy import fuzz
-from distances import haversine
+from pipeline.distances import haversine
 from pathlib import Path
-from constants import (CLEANED_MATCHED_PLANTS_FPATH, 
+from pipeline.constants import (CLEANED_MATCHED_PLANTS_FPATH, 
                        CLEANED_INFOGROUP_FPATH, 
                        CLEANED_FSIS_PROCESSORS_FPATH
 )

@@ -5,7 +5,7 @@ import pandas as pd
 import geopandas as gpd
 from shapely import Point
 from pathlib import Path
-from constants import abb2state, COUNTERGLOW_GEOJSON_FPATH
+from pipeline.constants import abb2state, COUNTERGLOW_GEOJSON_FPATH
 
 def create_counterglow_geojson(cg_path: str, 
                                 states_geojson_path: str) -> None:

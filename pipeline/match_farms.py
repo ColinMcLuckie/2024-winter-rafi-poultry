@@ -4,8 +4,8 @@ and Counterglow dataset based on farm name and location.
 
 import pandas as pd
 from fuzzywuzzy import fuzz
-from distances import haversine
-from constants import (
+from pipeline.distances import haversine
+from pipeline.constants import (
     CLEANED_COUNTERGLOW_FPATH,
     CLEANED_CAFO_POULTRY_FPATH,
     MATCHED_FARMS_FPATH,

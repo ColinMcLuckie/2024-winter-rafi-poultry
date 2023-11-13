@@ -4,15 +4,15 @@ filtering needs to be done on Infogroup or not. Functions can be run
 individually by including a function flag; the default is to run all of them.
 """
 
-import clean
-import match_farms
-import match_plants
-import calculate_captured_areas
-import farm_geojson_creation
+import pipeline.clean as clean
+import pipeline.match_farms as match_farms
+import pipeline.match_plants as match_plants
+import pipeline.calculate_captured_areas as calculate_captured_areas
+import pipeline.farm_geojson_creation as farm_geojson_creation
 import os
 
-import utils.visualize as visualize
-import utils.analyze as analyze
+import pipeline.utils.visualize as visualize
+import pipeline.utils.analyze as analyze
 
 import argparse
 import pandas as pd

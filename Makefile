@@ -18,6 +18,10 @@ notebooks_dir := "$(current_abs_path)notebooks"
 # environment variables
 include .env
 
+.PHONY: test
+test: build-pipeline
+	docker run -v $(current_abs_path)tests:/app/tests $(pipeline_image_name) pip install pytest && pytest tests
+
 # Build Docker image for pipeline
 build-pipeline:
 	docker build -t $(pipeline_image_name) -f "${pipeline_dir}/Dockerfile" $(current_abs_path)
